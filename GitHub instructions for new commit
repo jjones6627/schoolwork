@@ -1,0 +1,61 @@
+jjone@JohnJones-ASUSZenBook MINGW64 ~
+$ ls
+  #listinig of current directory
+
+jjone@JohnJones-ASUSZenBook MINGW64 ~
+$ cd documents
+  #Change Directory (go to Documents)
+
+jjone@JohnJones-ASUSZenBook MINGW64 ~/documents
+$ ls
+'8309 Reynolds'/                    FlashDrives/             'Outlook Files'/
+'Custom Office Templates'/          John-Jones-Resume-.docx   Resume/
+ Employment/                       'My Music'@                SPC/
+ EyeglassRx-18332209-43326685.pdf  'My Pictures'@
+ FeedbackHub/                      'My Videos'@
+
+jjone@JohnJones-ASUSZenBook MINGW64 ~/documents
+$ cd spc
+
+jjone@JohnJones-ASUSZenBook MINGW64 ~/documents/spc (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  #list
+
+Untracked files:
+  #list
+
+jjone@JohnJones-ASUSZenBook MINGW64 ~/documents/spc (main)
+$ git add .
+  #list
+
+jjone@JohnJones-ASUSZenBook MINGW64 ~/documents/spc (main)
+$ git commit -m "added module 2"
+[main c72c577] added module 2
+ 38 files changed, 3244 insertions(+)
+   #list
+
+jjone@JohnJones-ASUSZenBook MINGW64 ~/documents/spc (main)
+$ git push origin main
+Enumerating objects: 42, done.
+Counting objects: 100% (42/42), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (38/38), done.
+Writing objects: 100% (40/40), 2.74 MiB | 4.76 MiB/s, done.
+Total 40 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/jjones6627/schoolwork.git
+   aeb6063..c72c577  main -> main
+
+jjone@JohnJones-ASUSZenBook MINGW64 ~/documents/spc (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+jjone@JohnJones-ASUSZenBook MINGW64 ~/documents/spc (main)
+$
