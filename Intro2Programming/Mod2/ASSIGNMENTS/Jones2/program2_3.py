@@ -2,10 +2,11 @@
 
 #Set constants for base price ($24.99), shipping & handling per widget ($1.00), and tax rate (7%)
 #Ask user to input the number of widgets wanted, save as variable (order)
-#Calculate total widgets' cost (WIDGET_BASE_COST*order)
-#Calculate S&H (S_H_PER_WIDGET*order) and total tax (TAX_RATE*widget_cost)
-#Calculate total purchase (widget_cost+s_h_total+tax_total)
-#Outputs to user with detailed receipt as shown in Customer Requirements: program2_3
+#Multiply (WIDGET_BASE_COST) * (order) and assign to variable (widget_cost)
+#Multiply (S_H_PER_WIDGET) *(order) and assign to variable (s_h_total)
+#Multiply (TAX_RATE) * (widget_cost) and assign to variable (tax_total)
+#Add(widget_cost) + (s_h_total) + (tax_total) and assign to variable (total)
+#Output to user with detailed receipt as shown in Customer Requirements: program2_3
 
 def main():
     #Constants

@@ -2,9 +2,11 @@
 
 #Establish constant for user maximum spend of fifty dollars, as an integer (MAX_SPEND) 
 #Request user input in whole dollars (no cents) <= $50 and assign to variable (cost) as integer
-#Using subtraction (-), multiplication (*), division of integer (/) and modulus (%) operators,
-#determine variables for bills given as change
-#create variable for MAX_SPEND-cost for ease of processing
+#determine number of each bill given as change by...
+#dividing (change) by 20 assigned to (twenty), find the (leftover) change%20, re-assign value of (change) to (leftover)
+#dividing (change) by 10 assigned to (ten), find the (leftover) change%10, re-assign value of (change) to (leftover)
+#dividing (change) by 5 assigned to (five), find the (leftover) change%5, re-assign value of (change) to (leftover)
+#dividing (change) by 1 assigned to (one)
 #Output change in number of each bill given from largest bill to smallest as shown:
   #Bills dispensed as change:
   #$20 - X
@@ -23,10 +25,16 @@ def main():
   #Process
   change=MAX_SPEND-cost
   twenty=change//20
-  ten=change%20//10
-  five=(change-(twenty*20)-(ten*10))//5
-  one=(change-(twenty*20)-(ten*10)-(five*5))//1
-
+  leftover=change%20
+  change=leftover
+  ten=change//10
+  leftover=change%10
+  change=leftover
+  five=change//5
+  leftover=change%5
+  change=leftover
+  one=change//1
+  
   #output
   print('')
   print(f'Bills dispensed as change:')
