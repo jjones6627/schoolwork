@@ -1,8 +1,8 @@
 #John Jones  SPCID: 2515656
 
 #Establish a constant for the ratio of feet to fathom (FT_TO_FATHOM = 0.166667)
-#Prompt the user to "enter the number of feet to nearest 10th", as a float to one decimal (feet)
-#Process the conversion by multiplying (feet * FT_TO_FATHOM), as new variable (fathoms)
+#Prompt the user to "enter the number of feet to nearest 10th", assign as a float to one decimal to variable (feet)
+#Multiply (feet) * (FT_TO_FATHOM), assign to new variable (fathoms)
 #Display the original number of (feet) and the value of (fathoms), accurate to 3 decimals, to the user 
 
 def main():

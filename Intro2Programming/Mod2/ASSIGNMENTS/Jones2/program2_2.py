@@ -2,11 +2,10 @@
 
 #Establish constant for user maximum spend of fifty dollars, as an integer (MAX_SPEND) 
 #Request user input in whole dollars (no cents) <= $50 and assign to variable (cost) as integer
-#determine number of each bill given as change by...
-#dividing (change) by 20 assigned to (twenty), find the (leftover) change%20, re-assign value of (change) to (leftover)
-#dividing (change) by 10 assigned to (ten), find the (leftover) change%10, re-assign value of (change) to (leftover)
-#dividing (change) by 5 assigned to (five), find the (leftover) change%5, re-assign value of (change) to (leftover)
-#dividing (change) by 1 assigned to (one)
+#divide (change) by 20 assign to (twenty), find the (leftover) change%20, re-assign value of (change) to (leftover)
+#divide (change) by 10 assign to (ten), find the (leftover) change%10, re-assign value of (change) to (leftover)
+#divide (change) by 5 assign to (five), find the (leftover) change%5, re-assign value of (change) to (leftover)
+#divide (change) by 1 assign to (one)
 #Output change in number of each bill given from largest bill to smallest as shown:
   #Bills dispensed as change:
   #$20 - X
