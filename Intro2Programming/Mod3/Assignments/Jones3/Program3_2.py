@@ -43,25 +43,26 @@ def main():
     driver_age = int(input('Enter age of insured: '))
     driver_accidents = int(input('Enter the number of accidents: '))
     
-    #Process insurable
-    if driver_accidents == 3:
-       acc_charge = CHARGE_3_ACC
-    elif driver_accidents == 2:
-       acc_charge = CHARGE_2_ACC
-    elif driver_accidents == 1:
-       acc_charge = CHARGE_1_ACC
-    else: acc_charge = 0
 
-    if driver_age <25:
-       age_charge = AGE_FEE
-    
     #Process insurability
     if driver_accidents >3:
         print(f'You are uninsurable at this time')
     else:        
         if driver_age <25 and driver_accidents >2:
             print(f'You are uninsurable at this time')
-        else: #Output:   
+        else:
+            #Process insurable
+            if driver_accidents == 3:
+               acc_charge = CHARGE_3_ACC
+            elif driver_accidents == 2:
+               acc_charge = CHARGE_2_ACC
+            elif driver_accidents == 1:
+               acc_charge = CHARGE_1_ACC
+            else: acc_charge = 0
+
+            if driver_age <25:
+               age_charge = AGE_FEE
+    
             policy_amount = BASE_CHARGE + acc_charge + age_charge
             print('')
             print(f'Policy Amount: ${policy_amount:,}')

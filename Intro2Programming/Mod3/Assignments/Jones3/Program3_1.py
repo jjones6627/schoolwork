@@ -19,16 +19,23 @@ def main():
     #Define variables
     WEEKDAY_OT_RATE = 1.5    
     WEEKEND_OT_RATE = 2.0
+    ot_pay = 0
       
     #User Input
-    hourly_rate = float(input('Please enter your hourly rate of pay: '))
-    weekday_hours = float(input('Please enter the number of weekday hours worked: '))
-    weekend_hours = float(input('Please enter the number of weekend hours worked: '))
+    hourly_rate = float(input('Enter the hourly pay rate: '))
+    weekday_hours = float(input('Enter ther weekly hours worked last week: '))
+    weekend_hours = float(input('Enter the weekend hours worked last week: '))
 
     #Process pay types
-    regular_pay = weekday_hours * hourly_rate  
-    if weekday_hours > 40.0:
-       ot_pay = (weekday_hours - 40) * (hourly_rate * WEEKDAY_OT_RATE)
+    if weekday_hours <= 40.0:
+        regular_pay = weekday_hours * hourly_rate    
+    elif weekday_hours > 40.0:
+        regular_pay = hourly_rate * 40
+        ot_hours = weekday_hours - 40 
+        ot_pay = ot_hours * (hourly_rate * WEEKDAY_OT_RATE)
+    else:
+        ot_pay = 0
+        
     weekend_pay = weekend_hours * (hourly_rate * WEEKEND_OT_RATE) 
     total_pay = regular_pay + ot_pay + weekend_pay
                           

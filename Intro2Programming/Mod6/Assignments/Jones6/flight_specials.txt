@@ -1,0 +1,9 @@
+San Fransisco
+550
+10
+New Orleans
+330
+10
+Atlanta
+295
+20
